@@ -14,9 +14,12 @@
 
     /* Neutral */
     --dark-blue: hsl(210, 10%, 33%);
-    --gray-blue: hsl(201, 11%, 66%);
+    --gray-blue: hsl(202, 11%, 66%);
 }
 
+/* -------------------- 
+    General Styles
+---------------------*/
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -25,6 +28,167 @@
 body {
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+}
+h1, h2, h3 {
+    color: var(--dark-blue);
+}
+h1 {
+    margin-bottom: 1.25rem;
+}
+p {
+    color: var(--gray-blue);
+}
+button {
+    color: white;
+    border: none;
+    border-radius: 28px;
+    font-size: 18px;
+    padding: 17px 50px;
+}
+
+/* -------------------- 
+    Utility Styles
+---------------------*/
+.space {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.ios-btn {
+    border-bottom: 3px solid #209E8B;
+    background-color: var(--cyan);
+    box-shadow: 0px 10px 20px rgba(38, 186, 164, 33%);
+    margin-bottom: 1rem;
+}
+.mac-btn {
+    border-bottom: 3px solid #5262D8;
+    background-color: var(--light-blue);
+    box-shadow: 0px 10px 20px rgba(97, 115, 255, 33%);
+}
+.f-intro {
+    margin-bottom: 3rem;
+}
+.f-intro h2,
+.card h3 {
+    margin-bottom: 1rem;
+}
+.f-img {
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.f-img img {
+    width: 100%;
+}
+.card {
+    margin-bottom: 3rem;
+}
+/* -------------------- 
+    Header Styles
+---------------------*/
+header {
+    background-image: url("images/bg-header-mobile.png"),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 1));
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header div {
+    width: 50%;
+}
+header img {
+    opacity: 0.75;
+}
+
+/* -------------------- 
+    Intro Section
+---------------------*/
+#intro {
+    position: relative;
+    margin: -2rem 1rem 7rem 1rem;
+}
+#intro p {
+    margin-bottom: 3rem;
+}
+
+/* -------------------- 
+    Feature One Section
+---------------------*/
+#feature-one {
+    margin-bottom: 7rem;
+}
+
+/* -------------------- 
+    Feature Three Section
+---------------------*/
+#feature-three {
+    margin-bottom: 7rem;
+}
+.card-icon {
+    margin-bottom: 1.5rem;
+}
+
+/* -------------------- 
+    Gallery Section
+---------------------*/
+#gallery {
+    margin-bottom: 7rem;
+}
+.gallery-img {
+    margin-bottom: 3rem;
+}
+
+/* -------------------- 
+    CTA Section
+---------------------*/
+#cta {
+    margin-bottom: 7rem;
+}
+
+/* -------------------- 
+    Footer
+---------------------*/
+footer {
+    background-color: var(--gray-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+#footer-content {
+    margin: 3rem 0;
+}
+#footer-logo {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+#footer-logo img {
+    width: 50%;
+}
+footer nav {
+    margin-bottom: 3rem;
+}
+footer ul {
+    list-style: none;
+}
+footer li {
+    margin-bottom: 1rem;
+}
+footer a {
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--light-blue);   
+}
+#social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /*----------------------------------------------------------------------------

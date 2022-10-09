@@ -14,17 +14,19 @@
   <title>Frontend Mentor | Clipboard landing page</title>
 </head>
   <main>
-    <div><img src="images/logo.svg" alt="Clipboard logo"></div>
-    <section id="intro">
-      <h1>A History of everything you copy</h1>
+    <header>
+      <div><img src="images/logo.svg" alt="Clipboard logo"></div>
+    </header>
+    <section id="intro" class="space">
+      <h1>A history of everything you copy</h1>
       <p>  
         Clipboard allows you to track and organize everything you 
         copy. Instantly access your clipboard on all your devices.
       </p>
-      <button>Download for iOS</button>
-      <button>Download for Mac</button>
+      <button class="ios-btn">Download for iOS</button>
+      <button class="mac-btn">Download for Mac</button>
     </section>
-    <section id="feature-one">
+    <section id="feature-one" class="space">
       <div class="f-intro">
         <h2>Keep track of your snippets</h2>
         <p>
@@ -33,7 +35,9 @@
           devices. Our Mac and iOS apps will help you organize everything.
         </p>
       </div>
-      <div class="f-img"></div>
+      <div class="f-img">
+        <img src="images/image-computer.png" alt="Mac with Clipboard landing page logo">
+      </div>
       <div class="card">
         <h3>Quick Search</h3>
         <p>
@@ -53,49 +57,62 @@
         </p>
       </div>
     </section>
-    <section id="feature-two">
+    <section id="feature-two" class="space">
       <div class="f-intro">
         <h2>Access Clipboard anywhere</h2>
         <p>
           Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.
         </p>
       </div>
-      <div class="f-img"></div>
+      <div class="f-img">
+        <img src="images/image-devices.png" alt="Mobile Devices with Clipboard landing page logo">
+      </div>
     </section>
-    <section id="feature-three">
+    <section id="feature-three" class="space">
       <div class="f-intro">
         <h2>Supercharge your workflow</h2>
         <p>We’ve got the tools to boost your productivity.</p>
       </div>
       <div class="card">
+        <div class="card-icon"><img src="images/icon-blacklist.svg" alt=""></div>
         <h3>Create blacklists</h3>
         <p>
           Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
         </p>
       </div>
       <div class="card">
+        <div class="card-icon"><img src="images/icon-text.svg" alt=""></div>
         <h3>Plain text snippets</h3>
         <p>Remove unwanted formatting from copied text for a consistent look.</p>
       </div>
       <div class="card">
+        <div class="card-icon"><img src="images/icon-preview.svg" alt=""></div>
         <h3>Sneak preview</h3>
         <p>Quick preview of all snippets on your Clipboard for easy access.</p>
       </div>
     </section>
-    <section id="gallery"></section>
-    <section id="call-to-action">
-      <h2>Clipboard for iOS and Mac OS</h2>
-      <p>
-        Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
-        and you’re ready to start adding to your clipboard.
-      </p>
-      <button>Download for iOS</button>
-      <button>Download for Mac</button>
+    <section id="gallery" class="space">
+      <div class="gallery-img"><img src="images/logo-google.png" alt=""></div>
+      <div class="gallery-img"><img src="images/logo-ibm.png" alt=""></div>
+      <div class="gallery-img"><img src="images/logo-microsoft.png" alt=""></div>
+      <div class="gallery-img"><img src="images/logo-hp.png" alt=""></div>
+      <div class="gallery-img"><img src="images/logo-vector-graphics.png" alt=""></div>
+    </section>
+    <section id="cta" class="space">
+      <div class="f-intro">
+        <h2>Clipboard for iOS and Mac OS</h2>
+        <p>
+          Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+          and you’re ready to start adding to your clipboard.
+        </p>
+      </div>
+      <button class="ios-btn">Download for iOS</button>
+      <button class="mac-btn">Download for Mac</button>
     </section>
   </main>
   <footer>
-    <div>
-      <div><img src="/images/logo.svg" alt=""></div>
+    <div id="footer-content">
+      <div id="footer-logo"><img src="/images/logo.svg" alt=""></div>
       <nav>
         <ul>
           <li><a href="">FAQs</a></li>
@@ -106,15 +123,17 @@
         </ul>
       </nav>
       <ul id="social-media">
-        <li class="facebook-icon"></li>
-        <li class="twitter-icon"></li>
-        <li class="instagram-icon"></li>
+        <li class="facebook-icon"><img src="images/icon-facebook.svg" alt=""></li>
+        <li class="twitter-icon"><img src="images/icon-twitter.svg" alt="">
+        </li>
+        <li class="instagram-icon"><img src="images/icon-instagram.svg" alt="">
+        </li>
       </ul>
     </div>
-    <p class="attribution">
+    <div class="space">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Evalia Varona</a>.
-    </p>
+    </div>
   </footer>
 </body>
 </html>
