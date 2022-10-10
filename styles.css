@@ -195,7 +195,22 @@ footer a:hover {
     Tablet Design
 ------------------------------------------------------------------------------*/
 @media screen and (min-width: 700px) {
-
+    /* -------------------- 
+        Utility Styles
+    ---------------------*/
+    .space {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .ios-btn {
+        margin-right: 1rem;
+    }
+    /* -------------------- 
+        Header Styles
+    ---------------------*/
+    header {
+        background-image: url("images/bg-header-desktop.png");
+    }
 }
 
 /*----------------------------------------------------------------------------
